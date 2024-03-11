@@ -1,0 +1,51 @@
+.cont {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* height: 100vh; */
+  background-color: transparent;
+  /* border-radius: 50px; */
+  z-index: 1;
+}
+
+.glasspref {
+  width: 800px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  justify-content: center;
+  /* overflow: hidden; Remove scrollbar */
+
+  /* justify-content: flex-start; */
+  padding: 20px;
+  z-index: 2;
+}
+
+/* Optional: Improve overflow handling for touch devices */
+.glasspref::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for webkit browsers */
+}
+
+
+.color{
+
+  background-color: orange;
+  z-index: 1;
+  color: #ffffff;
+  width: 150px;
+  border-radius: 30px;
+}
+
+.color:hover{
+  background-color: rgb(255, 179, 39);
+}
